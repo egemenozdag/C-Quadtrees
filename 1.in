@@ -1,0 +1,39 @@
+LOGO logo1 LLDDRRULRRRDLURRRDLUDRDLRUURUDDURRULDDR
+LOGO logo2 LLULULUUURURURRRRDRDRDDDLDLDLLUURRURLDLLLLULRDRRUURRUDLLLLUDRRUU
+ENGRAVE logo1 4 3
+ENGRAVE logo2 9 6
+
+/*
+ * 
+ *  if(strlen(icerik)>4){
+            char *last ="";
+            strncpy(last, icerik, 4);
+            strncpy(lastKomut,icerik+4,strlen(icerik));
+            printf("%s\n",last);  
+        }
+        else if(strlen(icerik)==4){
+           printf("%s\n",icerik);
+        }
+        else if(strlen(icerik)<4){
+            //if(strcmp(icerik[0], ".")==0){icerik ="....";}
+            //else if(strcmp(icerik[0], "*")==0){icerik ="****";}
+            printf("%s\n",icerik);
+        }
+        else if(strlen(lastKomut)==1){
+            //if(strcmp(lastKomut, ".")==0){icerik ="....";}
+            //else if(strcmp(lastKomut, "*")==0){icerik ="****";}
+            printf("%s\n",icerik);
+        }
+ * /
+
+if(strlen(ptr)<4){ //4ten küçükse
+        if(strcmp(ptr,".")==0){strcpy(ptr,"....");}
+        else if(strcmp(ptr,"..")==0){strcpy(ptr,"....");}
+        else if(strcmp(ptr,"...")==0){strcpy(ptr,"....");}
+        else if(strcmp(ptr,"*")==0){ strcpy(ptr,"****");}
+        else if(strcmp(ptr,"**")==0){ strcpy(ptr,"****");}
+        else if(strcmp(ptr,"***")==0){ strcpy(ptr,"****"); }
+
+    }else if(strlen(ptr)>4){ //4ten büyükse buraya bakılacak
+
+    }
